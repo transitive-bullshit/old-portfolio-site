@@ -28,10 +28,13 @@
   },
   "dependencies": {
     "prop-types": "^15.6.2",
+    "raf": "^3.4.1",
+    "random": "^2.0.12",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-fluid-animation": "^0.0.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "typed.js": "^2.0.9"
   },
   "eslintConfig": {
     "extends": "react-app"

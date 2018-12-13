@@ -6651,6 +6651,16 @@ osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
+ow-lite@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ow-lite/-/ow-lite-0.0.2.tgz#df9f500e6740b6590a1e9a965730d49a8eb597d1"
+  integrity sha1-359QDmdAtlkKHpqWVzDUmo61l9E=
+
+ow@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/ow/-/ow-0.4.0.tgz#119a846d23738ce11677331fef8a3fbe019eb05b"
+  integrity sha512-kJNzxUgVd6EF5LoGs+s2/etJPwjfRDLXPTCfEgV8At77sRrV+PSFA8lcoW2HF15Qd455mIR2Stee/2MzDiFBDA==
+
 p-defer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
@@ -7759,6 +7769,15 @@ raf@^3.4.1:
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
   dependencies:
     performance-now "^2.1.0"
+
+random@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/random/-/random-2.0.12.tgz#8b33686639fd26959b40ff11f9186a43c1272f3c"
+  integrity sha1-izNoZjn9JpWbQP8R+RhqQ8EnLzw=
+  dependencies:
+    babel-runtime "^6.26.0"
+    ow "^0.4.0"
+    ow-lite "^0.0.2"
 
 randomatic@^3.0.0:
   version "3.1.1"
@@ -9256,6 +9275,11 @@ type-is@~1.6.16:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.18"
+
+typed.js@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.9.tgz#2e4e590466938ecb2ef5ec966a79b2d9381495ff"
+  integrity sha512-RTv7MvbsJ0ajz3PW/o325kXo0+gZAGW9xoZQ9eXrdvTg9prvH5JgAVeAITYuh7OoGStl1yuJgcR07IO10l3Q3g==
 
 typedarray@^0.0.6:
   version "0.0.6"
