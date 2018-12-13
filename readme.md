@@ -2,7 +2,7 @@
 
 > Personal portfolio for Travis Fischer.
 
-[![Build Status](https://travis-ci.com/transitive-bullshit/react-fluid-animation.svg?branch=master)](https://travis-ci.com/transitive-bullshit/react-fluid-animation) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.com/transitive-bullshit/transitivebullsh.it.svg?branch=master)](https://travis-ci.com/transitive-bullshit/transitivebullsh.it) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
