@@ -51,7 +51,7 @@ export default class App extends Component {
           animationRef={this._animationRef}
         />
 
-        <div className={styles.textOverlay}>
+        <div className={styles.overlay}>
           <h1 className={styles.title}>
             Transitive Bullshit
           </h1>
@@ -63,7 +63,7 @@ export default class App extends Component {
           </h3>
         </div>
 
-        <div className={styles.overlay}>
+        <div className={styles.links}>
           <SocialLinks />
         </div>
       </div>
@@ -129,7 +129,7 @@ export default class App extends Component {
         splats.push(splat)
       }
 
-      // this._animation.addSplats(splats)
+      this._animation.addSplats(splats)
     }
 
     this._tickRaf = raf(this._tick)

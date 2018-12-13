@@ -24,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "now",
+    "now-build": "yarn build && mv build dist"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -33,7 +35,7 @@
     "random": "^2.0.12",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-fluid-animation": "^0.0.1",
+    "react-fluid-animation": "^0.0.2",
     "react-scripts": "2.1.1",
     "typed.js": "^2.0.9"
   },
