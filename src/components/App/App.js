@@ -26,11 +26,9 @@ export default class App extends Component {
       strings: [
         'Travis Fischer',
         'Software Engineer',
-        'Entrepreneur',
-        'Automagical',
-        'All the JavaScripts',
-        'Open Source Software',
-        'React Developer'
+        'Automagical Founder & CTO',
+        'JavaScript & Kittens',
+        'Open Source Developer'
       ]
     })
   }
