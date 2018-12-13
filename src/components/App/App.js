@@ -6,6 +6,8 @@ import random from 'random'
 import FluidAnimation from 'react-fluid-animation'
 import Typed from 'typed.js'
 
+import SocialLinks from '../SocialLinks'
+
 import styles from './styles.module.css'
 
 export default class App extends Component {
@@ -49,7 +51,7 @@ export default class App extends Component {
           animationRef={this._animationRef}
         />
 
-        <div className={styles.overlay}>
+        <div className={styles.textOverlay}>
           <h1 className={styles.title}>
             Transitive Bullshit
           </h1>
@@ -59,6 +61,10 @@ export default class App extends Component {
             ref={this._subtitleRef}
           >
           </h3>
+        </div>
+
+        <div className={styles.overlay}>
+          <SocialLinks />
         </div>
       </div>
     )
@@ -123,7 +129,7 @@ export default class App extends Component {
         splats.push(splat)
       }
 
-      this._animation.addSplats(splats)
+      // this._animation.addSplats(splats)
     }
 
     this._tickRaf = raf(this._tick)

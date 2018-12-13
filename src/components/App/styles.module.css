@@ -2,13 +2,16 @@
   height: 100vh;
 }
 
-.overlay {
+.overlay, .textOverlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 1em;
+  padding: 1.5em;
+}
+
+.textOverlay {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,4 +36,11 @@
   margin: 0 0 0.5em;
   height: 1em;
   line-height: 1em;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
