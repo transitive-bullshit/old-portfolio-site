@@ -36,6 +36,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-fluid-animation": "^0.0.2",
+    "react-helmet": "^5.2.0",
     "react-scripts": "2.1.1",
     "typed.js": "^2.0.9"
   },

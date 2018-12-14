@@ -16,7 +16,7 @@ export default class App extends Component {
     this._tick()
 
     this._typed = new Typed(this._subtitle, {
-      typeSpeed: 75,
+      typeSpeed: 65,
       backSpeed: 50,
       backDelay: 2000,
       fadeOut: true,
@@ -26,8 +26,7 @@ export default class App extends Component {
       strings: [
         'Travis Fischer',
         'Software Engineer',
-        'Automagical Founder & CTO',
-        'JavaScript & Kittens',
+        'Automagical Founder',
         'Open Source Developer'
       ]
     })
