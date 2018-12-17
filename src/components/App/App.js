@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import { disableBodyScroll } from 'body-scroll-lock'
 import bowser from 'bowser'
 import raf from 'raf'
 import random from 'random'
@@ -13,9 +14,12 @@ import styles from './styles.module.css'
 
 const minSplatRadius = 0.00001
 const maxSplatRadius = (bowser.mobile ? 0.002 : 0.005)
+const yOffset = (bowser.mobile ? -0.08 * window.innerHeight : 0)
 
 export default class App extends Component {
   componentDidMount() {
+    disableBodyScroll(this._body)
+
     this._reset()
     this._tick()
 
@@ -52,7 +56,10 @@ export default class App extends Component {
 
   render () {
     return (
-      <div className={styles.container}>
+      <div
+        className={styles.container}
+        ref={this._bodyRef}
+      >
         <FluidAnimation
           animationRef={this._animationRef}
         />
@@ -83,6 +90,10 @@ export default class App extends Component {
 
   _subtitleRef = (ref) => {
     this._subtitle = ref
+  }
+
+  _bodyRef = (ref) => {
+    this._body = ref
   }
 
   _reset() {
@@ -131,7 +142,7 @@ export default class App extends Component {
         const cos = Math.cos(t)
         const sin = Math.sin(t)
         const x = w / 2 + r * cos
-        const y = h / 2 + r * sin
+        const y = h / 2 + r * sin + yOffset
         const k = random.float() > 0.98 ? random.float(3, 10) : 1
         const dx = k * random.float(-1, 1) * random.float(50, 300) * cos
         const dy = k * random.float(-1, 1) * random.float(50, 300) * sin

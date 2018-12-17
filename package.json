@@ -30,6 +30,7 @@
     "force-deploy": "yarn deploy && now alias && now rm --safe --yes transitive-bullshit"
   },
   "dependencies": {
+    "body-scroll-lock": "^2.6.1",
     "bowser": "1",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
@@ -37,7 +38,7 @@
     "random": "^2.0.12",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-fluid-animation": "^1.0.0",
+    "react-fluid-animation": "^1.0.1",
     "react-helmet": "^5.2.0",
     "react-scripts": "2.1.1",
     "typed.js": "^2.0.9"
