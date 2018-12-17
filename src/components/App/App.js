@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import bowser from 'bowser'
 import raf from 'raf'
 import random from 'random'
 
@@ -9,6 +10,9 @@ import Typed from 'typed.js'
 import SocialLinks from '../SocialLinks'
 
 import styles from './styles.module.css'
+
+const minSplatRadius = 0.00001
+const maxSplatRadius = (bowser.mobile ? 0.001 : 0.005)
 
 export default class App extends Component {
   componentDidMount() {
@@ -93,8 +97,8 @@ export default class App extends Component {
       const h = this._animation.height
       const r = (w + h) / 6
 
-      const a = Math.min(1.0, Math.max(0, (new Date() - this._time) / 20000))
-      const s = a * 0.005 + (1.0 - a) * 0.00001
+      const a = Math.min(1.0, Math.max(0, (new Date() - this._time + 2000) / 20000))
+      const s = a * maxSplatRadius + (1.0 - a) * minSplatRadius
       this._animation.config.splatRadius = s
 
       const splats = []

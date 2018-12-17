@@ -81,3 +81,11 @@
 
 .email .actionBgPane { background: #777; }
 .email:hover { border-color: #777; }
+
+
+@media only screen and (max-width: 768px) {
+  .action {
+    width: 2em;
+    height: 2em;
+  }
+}

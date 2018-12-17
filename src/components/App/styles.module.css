@@ -43,3 +43,19 @@
   right: 1.5em;
   bottom: 1.5em;
 }
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 3em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .links {
+    display: block;
+    width: 100%;
+    right: initial;
+  }
+}
