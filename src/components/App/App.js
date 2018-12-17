@@ -16,7 +16,7 @@ export default class App extends Component {
     this._tick()
 
     this._typed = new Typed(this._subtitle, {
-      typeSpeed: 65,
+      typeSpeed: 55,
       backSpeed: 50,
       backDelay: 2000,
       fadeOut: true,
@@ -30,6 +30,11 @@ export default class App extends Component {
         'Open Source Developer'
       ]
     })
+  }
+
+  componentWillMount() {
+    this._time = Date.now()
+    this._direction = 1
   }
 
   componentWillUnmount() {
@@ -87,6 +92,10 @@ export default class App extends Component {
       const w = this._animation.width
       const h = this._animation.height
       const r = (w + h) / 6
+
+      const a = Math.min(1.0, Math.max(0, (new Date() - this._time) / 20000))
+      const s = a * 0.005 + (1.0 - a) * 0.00001
+      this._animation.config.splatRadius = s
 
       const splats = []
       for (let i = 0; i < 1; ++i) {
