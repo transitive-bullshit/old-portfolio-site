@@ -24,6 +24,7 @@
   font-weight: 400;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   margin: 0.5em;
+  color: #fff;
 }
 
 .subtitle {
@@ -33,6 +34,7 @@
   margin: 0 0 0.5em;
   height: 1em;
   line-height: 1em;
+  color: #fff;
 }
 
 .links {
