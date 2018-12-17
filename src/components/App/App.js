@@ -13,8 +13,8 @@ import SocialLinks from '../SocialLinks'
 import styles from './styles.module.css'
 
 const minSplatRadius = 0.00001
-const maxSplatRadius = (bowser.mobile ? 0.002 : 0.005)
-const yOffset = (bowser.mobile ? -0.08 * window.innerHeight : 0)
+const maxSplatRadius = (bowser.mobile ? 0.001 : 0.005)
+const yOffset = (bowser.mobile ? -0.1 * window.innerHeight : 0)
 
 export default class App extends Component {
   componentDidMount() {
