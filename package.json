@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "now-build": "yarn build",
     "deploy": "now",
-    "force-deploy": "yarn build && now alias && now rm --safe transitive-bullshit"
+    "force-deploy": "yarn deploy && now alias && now rm --safe transitive-bullshit"
   },
   "dependencies": {
     "bowser": "1",
