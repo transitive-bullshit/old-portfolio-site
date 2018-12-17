@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "Transitive Bullshit",
+  "alias": "transitivebullsh.it",
   "builds": [
     {
       "src": "package.json",
