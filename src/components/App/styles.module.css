@@ -54,6 +54,7 @@
   }
 
   .links {
+    padding: 0 1em;
     display: block;
     width: 100%;
     right: initial;

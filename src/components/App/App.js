@@ -12,7 +12,7 @@ import SocialLinks from '../SocialLinks'
 import styles from './styles.module.css'
 
 const minSplatRadius = 0.00001
-const maxSplatRadius = (bowser.mobile ? 0.001 : 0.005)
+const maxSplatRadius = (bowser.mobile ? 0.002 : 0.005)
 
 export default class App extends Component {
   componentDidMount() {
@@ -119,8 +119,8 @@ export default class App extends Component {
             continue
           }
 
-          const dx = random.float(-1, 1) * random.float(50, 2000)
-          const dy = random.float(-1, 1) * random.float(50, 2000)
+          const dx = random.float(-1, 1) * random.float(50, 300)
+          const dy = random.float(-1, 1) * random.float(50, 300)
           const splat = { x, y, dx, dy, color }
           splats.push(splat)
           break

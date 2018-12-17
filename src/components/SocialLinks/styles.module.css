@@ -14,7 +14,7 @@
   transition: all 300ms ease-out;
   width: 3.5em;
   height: 3.5em;
-  margin-right: 1em;
+  margin: 1em 1em 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,10 +82,14 @@
 .email .actionBgPane { background: #777; }
 .email:hover { border-color: #777; }
 
-
 @media only screen and (max-width: 768px) {
-  .action {
-    width: 2em;
-    height: 2em;
+  .links {
+    position: relative;
+    left: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .action:last-child {
+    margin-right: 1em;
   }
 }
