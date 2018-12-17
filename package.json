@@ -26,7 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "now-build": "yarn build",
-    "deploy": "now"
+    "deploy": "now",
+    "force-deploy": "yarn build && now alias && now rm --safe transitive-bullshit"
   },
   "dependencies": {
     "classnames": "^2.2.6",
