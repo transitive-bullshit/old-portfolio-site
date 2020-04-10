@@ -26,8 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "now-build": "yarn build",
-    "deploy": "now",
-    "force-deploy": "yarn deploy && now alias && now rm --safe --yes transitive-bullshit"
+    "deploy": "now --prod",
+    "force-deploy": "yarn deploy && now rm --safe --yes transitive-bullshit"
   },
   "dependencies": {
     "body-scroll-lock": "^2.6.1",

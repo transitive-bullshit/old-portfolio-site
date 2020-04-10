@@ -13,8 +13,8 @@ import SocialLinks from '../SocialLinks'
 import styles from './styles.module.css'
 
 const minSplatRadius = 0.00001
-const maxSplatRadius = (bowser.mobile ? 0.001 : 0.005)
-const yOffset = (bowser.mobile ? -0.1 * window.innerHeight : 0)
+const maxSplatRadius = bowser.mobile ? 0.001 : 0.005
+const yOffset = bowser.mobile ? -0.1 * window.innerHeight : 0
 
 export default class App extends Component {
   componentDidMount() {
@@ -29,14 +29,9 @@ export default class App extends Component {
       backDelay: 2000,
       fadeOut: true,
       shuffle: true,
-      loop: true,
+      loop: false,
       showCursor: false,
-      strings: [
-        'Travis Fischer',
-        'Software Engineer',
-        'Automagical Founder',
-        'Open Source Developer'
-      ]
+      strings: ['Travis Fischer', 'Working on Saasify', 'Brooklyn, NY']
     })
   }
 
@@ -54,26 +49,15 @@ export default class App extends Component {
     this._typed.destroy()
   }
 
-  render () {
+  render() {
     return (
-      <div
-        className={styles.container}
-        ref={this._bodyRef}
-      >
-        <FluidAnimation
-          animationRef={this._animationRef}
-        />
+      <div className={styles.container} ref={this._bodyRef}>
+        <FluidAnimation animationRef={this._animationRef} />
 
         <div className={styles.overlay}>
-          <h1 className={styles.title}>
-            Transitive Bullshit
-          </h1>
+          <h1 className={styles.title}>Transitive Bullshit</h1>
 
-          <h3
-            className={styles.subtitle}
-            ref={this._subtitleRef}
-          >
-          </h3>
+          <h3 className={styles.subtitle} ref={this._subtitleRef} />
         </div>
 
         <div className={styles.links}>
@@ -108,13 +92,16 @@ export default class App extends Component {
       const h = this._animation.height
       const r = (w + h) / 6
 
-      const a = Math.min(1.0, Math.max(0, (new Date() - this._time + 2000) / 20000))
+      const a = Math.min(
+        1.0,
+        Math.max(0, (new Date() - this._time + 2000) / 20000)
+      )
       const s = a * maxSplatRadius + (1.0 - a) * minSplatRadius
       this._animation.config.splatRadius = s
 
       const splats = []
       for (let i = 0; i < 1; ++i) {
-        const color = [ random.float(10), random.float(10), random.float(10) ]
+        const color = [random.float(10), random.float(10), random.float(10)]
 
         /*
         const w0 = w / 3.0
