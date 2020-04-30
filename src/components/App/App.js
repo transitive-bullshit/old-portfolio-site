@@ -28,10 +28,10 @@ export default class App extends Component {
       backSpeed: 50,
       backDelay: 2000,
       fadeOut: true,
-      shuffle: true,
+      shuffle: false,
       loop: false,
       showCursor: false,
-      strings: ['Travis Fischer', 'Working on Saasify', 'Brooklyn, NY']
+      strings: ['Working on Saasify', 'Travis Fischer']
     })
   }
 
